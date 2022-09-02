@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="planets.css">
+  <title>Frontend Mentor | Planets fact site</title>
+  <script src="planetnavigation.js" defer></script>
+  <script src="planettabs.js" defer></script>
+</head>
+<body>
+
+
+
+  <header class="primary-header flex-nav header-grid"> 
+   <div class="site-title"><h1 class="site-nav-title ff-antonio uppercase">The Planets</h1></div> 
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+<nav class="sitenav">
+  
+    <ul id="primary-navigation" class="primary-navigation underline-indicators flex underline-indicators--neptune" data-visible="false">
+      <li class="site-nav-planet"><a href="mercury.html" class="ff-spartan">Mercury</a></li>
+      <li class="site-nav-planet"><a href="venus.html" class="ff-spartan">Venus</a></li>
+      <li class="site-nav-planet"><a href="earth.html" class="ff-spartan">Earth</a></li>
+      <li class="site-nav-planet"><a href="mars.html" class="ff-spartan">Mars</a></li>
+      <li class="site-nav-planet"><a href="jupiter.html" class="ff-spartan">Jupiter</a></li>
+      <li class="site-nav-planet"><a href="saturn.html" class="ff-spartan">Saturn</a></li>
+      <li class="site-nav-planet"><a href="uranus.html" class="ff-spartan">Uranus</a></li>
+      <li class="active active--neptune site-nav-planet"><a href="neptune.html" class="ff-spartan">Neptune</a></li>
+    </ul>
+  
+</nav>
+</header>
+
+
+<main id="main" class="grid-container grid-container--planets">
+
+  <div class="image-planet images-container">
+   <picture id="earth-image">
+     <source srcset="img/planet-neptune.svg" type="svg">
+    <img src="img/planet-neptune.svg" alt="The Planet Neptune" data-image="earth-image">
+  </picture>
+
+  <picture hidden id="earth-internal-image">
+    <source srcset="img/planet-neptune-internal.svg" type="svg">
+    <img src="img/planet-neptune-internal.svg" alt="Inside the Planet Neptune" data-image="earth-internal-image">
+  </picture>
+
+  <picture hidden id="earth-surface-image" class="surface-geology-picture-container">
+    <source srcset="img/geology-neptune.svg" type="svg">
+    <img src="img/planet-neptune.svg" alt="The Planet Neptune" data-image="earth-internal-image">
+    <img src="img/geology-neptune.png" alt="Neptune's surface" data-image="earth-surface-image" class="surface-picture-positioning">
+  </picture>
+
+
+  </div>
+<div>
+  
+</div>
+
+    <!-- earth image -->
+ <!--  <picture hidden id="earth-surface-image">
+      <source srcset="assets/geology-earth.svg" type="svg">
+      <img src="assets/geology-earth.png" alt="Inside the Earth" data-image="earth-surface-image">
+      <img src="assets/planet-earth.svg" data-image="earth-internal-image">
+    </picture> -->
+
+
+
+
+<!-- Neptune overview -->
+
+<article class="overview planet-overview flow container" id="overview-tab" tabindex="0" role="tabpanel">
+  <h1 class="ff-antonio fs-800 uppercase">Neptune</h1>
+<p class="text-light fs-400 ff-spartan">Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+  its near-twin Uranus.</p>
+  <p class="fs-300 ff-spartan"> <span class="text-accent fs-300">Source:</span> &nbsp;Wikipedia <a href="https://en.wikipedia.org/wiki/Neptune"><img src="img/icon-source.svg"></a> </p>
+</article>
+
+<!-- Neptune internal structure -->
+
+<article hidden class="overview planet-overview flow container" id="structure-tab" tabindex="0" role="tabpanel">
+  <h1 class="ff-antonio fs-800 uppercase">Neptune</h1>
+<p class="text-light fs-400 ff-spartan">Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
+  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
+  Increasing concentrations of methane, ammonia and water are found in the lower regions.</p>
+  <p class="fs-300 ff-spartan"> <span class="text-accent fs-300">Source:</span> &nbsp;Wikipedia <a href="https://en.wikipedia.org/wiki/Neptune#Internal_structure"><img src="img/icon-source.svg"></a> </p>
+</article>
+
+
+  <!-- Neptune surface geology -->
+
+<article hidden class="overview planet-overview flow container" id="surface-tab" tabindex="0" role="tabpanel">
+  <h1 class="ff-antonio fs-800 uppercase">Neptune</h1>
+<p class="text-light fs-400 ff-spartan">Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
+  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
+  the red and infrared portion of the spectrum.</p>
+  <p class="fs-300 ff-spartan"> <span class="text-accent fs-300">Source:</span> &nbsp;Wikipedia <a href="https://en.wikipedia.org/wiki/Neptune#Atmosphere"><img src="img/icon-source.svg"></a> </p>
+</article>
+
+<!-- <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+    <button aria-selected="true" role="tab" aria-controls="overview-tab" class="uppercase ff-antonio text-light letter-spacing-2" tabindex="0" data-image="moon-image">Moon</button>
+    <button aria-selected="false" role="tab" aria-controls="internal-structure-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mars-image">Mars</button>
+    <button aria-selected="false" role="tab" aria-controls="surface-geology-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="europa-image">Europa</button>
+    <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="titan-image">Titan</button>
+</div> -->
+
+
+<div class="tab-list underline-indicators--tabs underline-indicators--tabs--neptune flex container active--neptune--tabs" role="tablist" aria-label="planet information">
+  
+  
+  <button aria-selected="true" role="tab" aria-controls="overview-tab" tabindex="0" class="numbered-title  ff-spartan text-light" data-image="earth-image"> <span aria-hidden="true">01</span>Overview</button>
+  <button aria-selected="false" role="tab" aria-controls="structure-tab" tabindex="-1" class="numbered-title  ff-spartan text-light" data-image="earth-internal-image"> <span aria-hidden="true">02</span><span>Internal</span>Structure</button>
+  <button aria-selected="false" role="tab" aria-controls="surface-tab" tabindex="-1" class="numbered-title  ff-spartan text-light" data-image="earth-surface-image"> <span aria-hidden="true">03</span>Surface<span> Geology</span></button>
+  
+
+
+</div>
+  
+<div class="planet-specs flex flow--space-small">
+
+ <div class="specs flex">
+<h3 class="text-accent ff-spartan uppercase">Rotation Time</h3>
+
+<p class="text-white ff-antonio uppercase fs-300">16.08 Hours</p>
+</div> 
+
+<div class="specs flex">
+  <h3 class="text-accent ff-spartan uppercase">Revolution Time</h3>
+  <p class="text-white ff-antonio uppercase fs-300">164.79 Years</p>
+  </div> 
+
+  <div class="specs flex">
+    <h3 class="text-accent ff-spartan uppercase">Radius</h3>
+    <p class="text-white ff-antonio uppercase fs-300">24,622 KM</p>
+    </div> 
+
+    <div class="specs flex">
+      <h3 class="text-accent ff-spartan uppercase flow--space-small">Average Temp</h3>
+      <p class="text-white ff-antonio uppercase fs-300">-201°c</p>
+      </div> 
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

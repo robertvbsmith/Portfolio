@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@400;700;900&display=swap');
+
+
+*,
+*::before
+*::after    {
+    -webkit-box-sizing: border-box;    
+    box-sizing: border-box;
+}
+
+
+html { 
+    background: url(images/bg-desktop.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #674bb1;
+  }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    
+}
+
+img {
+  
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+   
+    
+    width: 100%;
+}
+
+header,
+section,
+main {
+    padding: 0em 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+    
+}
+
+ .flex-container {
+    
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .header{
+      display: flex;
+      padding-top: 3em;
+      padding-left: 3em;
+  }
+
+  .main-image{
+      width: 100%;
+      max-width: 100%;
+  }
+
+
+  .columns{
+      display: flex;
+      padding-top: 5em;
+      gap: 5em;
+      padding-left: 3em;
+      padding-right: 3em;
+  }
+
+  .col{
+      flex-basis: 50%;
+  }  
+  
+
+  .heading{
+      font-size: 2.5rem;
+      color: white;
+      font-family: lato;
+      padding-bottom: 1em;
+  }
+
+  .paragraph{
+      color: white;
+      font-size: 1.3rem;
+      font-family: lato;
+      font-weight: 300;
+      padding-bottom: 1.5em;
+  }
+
+  .btn-register{
+      padding: 0.9em 4em 0.9em 4em;
+      background-color: white;
+      border: none;
+      box-shadow: inset;
+      border-radius: 100px;
+      color: #674bb1;
+      font-size: 1.1rem;
+      font-family: lato;
+      font-weight: 300;
+    }
+
+    .btn-register:hover{
+        background-color: #e980e7;
+        color: white;
+    }
+
+
+    .social-icons-container{
+        
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 5em;
+        padding-right: 10em;
+        margin-bottom: 3rem;
+    }
+
+ .facebook-logo{
+     padding-right: 1em;
+ }
+ 
+ .twitter-logo{
+     padding-right: 1em;
+ }
+
+ .instagram-logo{
+     padding-right: 1em;
+ }
+
+.email-modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+}
+ .email-modal__container {
+
+    background-color: red;
+ }
+
+
+
+ @media (min-width:1px) and (max-width:975px) {
+     html{
+        background: url(images/bg-mobile.svg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-color: #674bb1;
+     }
+     .flex-container{
+         display: flex;
+         flex-direction: column;
+     }
+        .header{
+       
+        padding: 0;
+        padding-top: 3em;
+            
+            }
+            .huddle-logo{
+                padding-left: 2.1em;
+                align-self: flex-start;
+                max-width: 40%;
+            }
+        .main-image{
+    min-width: 70%;
+    max-width: 100%;
+}
+            .columns{
+                flex-direction: column;
+                gap: 5em;
+                margin: 0 auto;
+                    }
+                    .col{
+                        flex-basis: 50%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }  
+                    .paragraph{
+                       
+                        font-size: 1.7rem;
+                        
+                        
+                    }
+                    .btn-register{
+                        margin: 0 auto;
+                        padding: 0.9em 6em 0.9em 6em;
+                        box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
+                    }
+                    .social-icons-container{
+                        display: flex;
+                        justify-content: center;
+                    
+                        padding: 0;
+                       padding-top: 3em;
+                       padding-left: 1em;
+                    }
+ }
+ 

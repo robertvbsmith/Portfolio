@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="photosnap.css">
+  <title>Photosnap pricing</title>
+  <script src="photosnapnavigation.js" defer></script>
+  <script src="photosnaptabs.js" defer></script>
+  <script src="toggleopacity.js" defer></script>
+</head>
+<body class="body-pricing--desktop">
+
+  <header class="primary-header">
+
+    <div class="logo"> <img src="assets/shared/desktop/logo.svg" alt="Photosnap Logo">  </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only" aria-expanded="false"> Menu</span> </button>
+  
+    <nav class="nav">
+  
+      <ul id="primary-navigation" class="primary-navigation" data-visible="false">
+        <li><a href="stories.html" class="ff-dm-sans uppercase text-pure-black">Stories</a> </li>
+        <li><a href="features.html" class="ff-dm-sans uppercase text-pure-black">Features</a> </li>
+        <li><a href="pricing.html" class="ff-dm-sans uppercase text-pure-black">Pricing</a> </li>
+        <hr class="line">
+        <p><a href="#" class="ff-dm-sans uppercase get-an-invite-nav get-an-invite-nav--tablet text-pure-white">Get an invite </a> </p> 
+      </ul>
+      
+  </nav>
+  </header>
+
+
+<!--Pricing section-->
+<section class="bg-black pricing-section">
+  <div class="first-section-pricing-section"> <img src="assets/pricing/mobile/hero.jpg" alt="Gal photographing sunset"></div>
+  <div class="second-section-pricing-section">
+
+ 
+
+<p class="pricing-title pricing-title--tablet text-pure-white ff-dm-sans">PRICING</p>
+
+
+
+<p class="pricing-paragraph">Create your stories, Photosnap is a platform for photographers and visual storytellers. It's the simple way to create and share your photos.</p>
+  </div>
+</section> 
+
+
+<main id="main" class="main--pricing-page main--pricing-page--desktop bg-white">
+ 
+ <!--Monthly Yearly Toggle Switch-->
+ <section class="monthly-yearly-toggle-switch-section">
+  <div class="toggle-switch-container">
+    <p class="monthly text3" style="opacity: 1;">Monthly</p>
+    <!-- Rounded switch -->
+    <button id="button" class="button">
+<label for="toggle" class="switch">
+  <input type="checkbox" id="checkbox" class="checkbox" id="toggle" onclick="check(), changeOpacity()">
+  <span class="slider round"></span>
+</label>
+</button>
+    <p class="yearly text4" style="opacity: 0.2;">Yearly</p>
+  </div>
+ 
+</section>
+ <!-- Basic section -->
+<section class="basic-section basic-section--tablet basic-section--desktop">
+  <h1 class="basic-title">Basic</h1>
+  <p class="basic-paragraph">Includes basic usage of our platform.<br> Recommended for new and aspiring <br>photographers.</p>
+  <p class="basic-price-monthly text1">$19.00</p>  <p class="basic-price-per-month text1">per month</p>
+  <p class="basic-price-yearly text2">$190.00 <br> <span class="basic-price-per-year text2">per year</span></p>
+  <a href="#" class="basic-link">Pick Plan</a>
+</section>
+
+ <!-- Pro section -->
+<section class="pro-section pro-section--tablet pro-section--desktop">
+  <h1 class="pro-title pro-title--tablet">Pro</h1>
+  <p class="pro-paragraph">More advanced features available.<br> Recommended for photography<br> veterans and professionals.</p>
+  <p class="pro-price-monthly text1">$39.00<br></p> <p class="pro-price-per-month text1">per month</p>
+  <p hidden  class="pro-price-yearly text2">$390.00 <br> <span class="pro-price-per-year text2">per year</span></p>
+ <a href="#" class="pro-link">Pick Plan</a>
+</section>
+
+
+
+ <!-- Business section -->
+<section class="business-section business-section--tablet business-section--desktop">
+  <h1 class="business-title">Business</h1>
+  <p class="business-paragraph">Additional features available such as<br> more detailed metrics. Recommended <br>for business owners.</p>
+  <p class="business-price-monthly text1">$99.00<br> <span class="business-price-per-month text1">per month</span></p>
+
+  <p hidden  class="business-price-yearly text2">$990.00 <br> <span class="business-price-per-year text2">per year</span></p>
+ <a href="#" class="business-link">Pick Plan</a>
+</section>
+
+ 
+
+<!--COMPARE / The Features section -->  
+    <div class="compare"><h1>Compare</h1></div>
+   <div class="the-features-below-compare"><h1 class="the-features">The Features</h1></div> 
+
+
+ <!--Unlimited Story Posting section-->
+
+  <section class="unlimited-story-section">
+   
+   <div class="unlimited-story-title"> <h1>Unlimited Story Posting</h1></div>
+   <div class="unlimited-story-posting-basic-pro-business-check"> 
+     <p class="basic-pro-business-title basic-unlimited-story-check">Basic</p>
+     <p class="basic-pro-business-title pro-unlimited-story-check">Pro</p>
+     <p class="basic-pro-business-title business-unlimited-story-check">Business</p>
+  </div> 
+
+  </section>
+
+ <!--Unlimited Photo Upload section-->
+  <section class="unlimited-photo-upload-section">
+   
+    <div class="unlimited-photo-upload-title"> <h1>Unlimited Photo Upload</h1></div>
+    <div class="unlimited-photo-upload-basic-pro-business-check"> 
+      <p class="basic-pro-business-title basic-unlimited-photo-upload-check">Basic</p>
+      <p class="basic-pro-business-title pro-unlimited-photo-upload-check">Pro</p>
+      <p class="basic-pro-business-title business-unlimited-photo-upload-check">Business</p>
+   </div> 
+ 
+   </section>
+
+ <!--Embedding Custom Content section-->
+   <section class="embedding-custom-content-section">
+   
+    <div class="embedding-custom-content-title"> <h1>Embedding Custom Content</h1></div>
+    <div class="embedding-custom-content-basic-pro-business-check"> 
+      <p class="basic-pro-business-title basic-embedding-custom-content-check">Basic</p>
+      <p class="basic-pro-business-title pro-embedding-custom-content-check">Pro</p>
+      <p class="basic-pro-business-title business-embedding-custom-content-check">Business</p>
+   </div> 
+ 
+   </section>
+
+    <!--Customize Metadata section-->
+   <section class="customize-metadata-section">
+   
+    <div class="customize-metadata-title"> <h1>Customize Metadata</h1></div>
+    <div class="customize-metadata-basic-pro-business-check"> 
+      <p class="basic-pro-business-title basic-customize-metadata-check">Basic</p>
+      <p class="basic-pro-business-title pro-customize-metadata-check">Pro</p>
+      <p class="basic-pro-business-title business-customize-metadata-check">Business</p>
+   </div> 
+ 
+   </section>
+
+       <!--Advanced Metrics section-->
+       <section class="advanced-metrics-section">
+   
+        <div class="advanced-metrics-title"> <h1>Advanced Metrics</h1></div>
+        <div class="advanced-metrics-basic-pro-business-check"> 
+          <p class="basic-pro-business-title basic-advanced-metrics-check">Basic</p>
+          <p class="basic-pro-business-title pro-advanced-metrics-check">Pro</p>
+          <p class="basic-pro-business-title business-advanced-metrics-check">Business</p>
+       </div> 
+     
+       </section>
+       
+       <!--Photo Downloads section-->
+       <section class="photo-downloads-section">
+   
+        <div class="photo-downloads-title"> <h1>Photo Downloads</h1></div>
+        <div class="photo-downloads-basic-pro-business-check"> 
+          <p class="basic-pro-business-title basic-photo-downloads-check">Basic</p>
+          <p class="basic-pro-business-title pro-photo-downloads-check">Pro</p>
+          <p class="basic-pro-business-title business-photo-downloads-check">Business</p>
+       </div> 
+     
+       </section>
+
+
+              <!--Search Engine Indexing section-->
+              <section class="search-engine-indexing-section">
+   
+                <div class="search-engine-indexing-title"> <h1>Search Engine Indexing</h1></div>
+                <div class="search-engine-indexing-basic-pro-business-check"> 
+                  <p class="basic-pro-business-title basic-search-engine-indexing-check">Basic</p>
+                  <p class="basic-pro-business-title pro-search-engine-indexing-check">Pro</p>
+                  <p class="basic-pro-business-title business-search-engine-indexing-check">Business</p>
+               </div> 
+             
+               </section>
+
+
+ 
+ 
+              <!--Custom Analytics section-->
+              <section class="custom-analytics-section">
+   
+                <div class="custom-analytics-title"> <h1>Custom Analytics</h1></div>
+                <div class="custom-analytics-basic-pro-business-check"> 
+                  <p class="basic-pro-business-title basic-custom-analytics-check">Basic</p>
+                  <p class="basic-pro-business-title pro-custom-analytics-check">Pro</p>
+                  <p class="basic-pro-business-title business-custom-analytics-check">Business</p>
+               </div> 
+             
+               </section>
+  
+
+
+</section>
+
+
+
+<!--We're in Beta section-->
+
+<section class="were-in-beta-section were-in-beta-section--desktop">
+   
+  
+  <p class="were-in-beta-title text-pure-white ff-dm-sans">we're in beta.<br> get your invite<br> today</p>
+  
+  
+
+    <a href="#" class="uppercase text-pure-white ff-dm-sans">get an invite&nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/shared/desktop/arrow.svg" alt="Get an invite arrow"></a>
+  </section> 
+
+
+
+
+</main>
+
+
+
+  <!--Footer-->
+<footer id="footer" class="footer bg-black">
+
+
+  <div class="footer-logo--tablet-section"><img src="assets/shared/desktop/logo.svg" class="footer-logo"></div>
+  
+  
+  <div class="first-footer-section">
+    <a href="#"><img src="assets/shared/desktop/facebook.svg"></a>
+    <a href="#"><img src="assets/shared/desktop/youtube.svg"></a>
+    <a href="#"><img src="assets/shared/desktop/twitter.svg"></a>
+    <a href="#"><img src="assets/shared/desktop/pinterest.svg"></a>
+    <a href="#"><img src="assets/shared/desktop/instagram.svg"></a>
+  </div>
+  
+  <div class="second-footer-section">
+    <a href="index.html" class="ff-dm-sans text-pure-white">Home</a>
+    <a href="stories.html" class="ff-dm-sans text-pure-white">Stories</a>
+    <a href="features.html" class="ff-dm-sans text-pure-white">Features</a>
+    <a href="pricing.html" class="ff-dm-sans text-pure-white">Pricing</a>
+  </div>
+  
+  <div class="third-footer-section">
+    <a href="#" class="ff-dm-sans text-pure-white">Get an invite<img src="assets/shared/desktop/arrow.svg"></a>
+  
+    <p class="ff-dm-sans text-pure-white">Copyright 2019. All Rights Reserved</p>
+  </div>
+  </footer>
+
+</body>
+</html>

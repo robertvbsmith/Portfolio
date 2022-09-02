@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        #wrapper {
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #wrapper > * {
+            margin-block: 3rem;
+        }
+
+        body {
+            font-size: 6rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 50%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            
+        }
+        .two {
+            min-height: 100vh;
+            width: 50%;
+            background-color: rgb(16, 171, 199);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+        }
+        .three {
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+        }
+        .four {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(179, 0, 255);
+            color: white;
+            text-align: center;
+            
+        }
+        .five {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(166, 178, 36);
+            color: white;
+            text-align: center;
+            
+        }
+        .six {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(30, 0, 255);
+            color: white;
+            text-align: center;
+          
+        }
+        .seven {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(21, 195, 151);
+            color: white;
+            text-align: center;
+            
+        }
+        .eight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgba(192, 153, 47, 0.834);
+            color: white;
+            text-align: center;
+           
+        }
+        .nine {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(255, 128, 0);
+            color: white;
+            text-align: center;
+           
+        }
+        .ten {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100vh;
+            background-color: rgb(91, 96, 104);
+            color: white;
+            text-align: center;
+          
+        }
+
+
+
+    </style>
+  
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+    <div class="one section" id="one">Welcome! <br> Please scroll down </div>
+    <div class="two section" id="two">This is <br>a practice slide</div>
+    <div class="three section" id="three">This is<br> another practice slide</div>
+    <div class="four section" id="four">This is<br> yet another practice slide</div>
+    <div class="five section" id="five">This is<br> the final practice slide</div>
+    <div class="six section" id="six">JK</div>
+    <div class="seven section" id="seven">JK <br>AGAIN</div>
+    <div class="eight section" id="eight">BABO</div>
+    <div class="nine section" id="nine">LAAAAAAAAAAA</div>
+    <div class="ten section" id="ten">ok this is actually the end, byeeeeeEEEE.</div>
+    </div>
+
+
+
+
+    <script src="CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+<script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".one",
+        markers: true,
+        start: "top`",
+        end: "top 30%",
+        scrub: true
+    }
+});
+
+tl.from(".one", {
+    x:500, y:500, duration: 10, opacity:0.1
+})
+.from(".two", {x:1000, duration: 3})
+.from(".three", {x:-7000, duration: 2})
+
+//sectionsTimeline.to('.two', {
+   // scrollTrigger: {
+      //  trigger: ".two",
+      //  toggleActions: "play pause reverse pause",
+      //  start: "300",
+      //  end: "bottom",
+      //  scrub: true,
+//    },
+    //    x: 100,
+  //      duration: .5
+   // })
+
+
+</script>
+</body>
+</html>
